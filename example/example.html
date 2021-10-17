@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CommanderScreen-Example</title>
+
+  <style>
+    .hidden {
+      display: none;
+    }  
+  </style>
+</head>
+<body>
+
+  <h1>CommanderScreen-Example</h1>
+  <p>To start, <a href="#start">tab here</a>.</p>
+
+  <article id="start" class="hidden">
+    <h2>Start-Screen</h2>
+    <p>This is the first screen. If you want to show the next: <a href="#firstpage">tab here</a>.</p>
+  </article>
+
+  <article id="firstpage" class="hidden">
+    <h2>First Page</h2>
+    <p>The is the real first page after the start-screen. You can go back to <a href="#start">start</a> or go to <a href="#last">last</a>.</p>
+  </article>  
+
+  <article id="last" class="hidden">
+    <h2>Last Page</h2>
+    <p>The is the last page. You can go back to <a href="#start">start</a> or go to <a href="#firstpage">first page</a>.</p>
+  </article>    
+
+  <script src="../src/CommanderScreen.js"></script>
+  <script>
+    CommanderScreen.init();
+  </script>
+</body>
+</html>
